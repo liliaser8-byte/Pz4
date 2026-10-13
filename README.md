@@ -11,4 +11,5 @@
 <img width="840" height="217" alt="image" src="https://github.com/user-attachments/assets/40b0508d-2935-4317-9852-a5ca84d09a63" />
 <img width="1401" height="726" alt="image" src="https://github.com/user-attachments/assets/0a4b7c0b-9b87-43bc-be39-437d4777dcbd" />
 <img width="776" height="97" alt="Знімок екрана 2026-10-13 122423" src="https://github.com/user-attachments/assets/1074b007-4bd6-4eee-bb8e-90eeb6b10a50" />
+<img width="1585" height="637" alt="image" src="https://github.com/user-attachments/assets/c2a5aa15-d0bd-4e15-a197-cb4908cdabcd" />
 
