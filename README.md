@@ -160,46 +160,6 @@ int main() {
 Кількість витягнутих елементів: 6
 ```
 ##  Завдання.
-<img width="1096" height="285" alt="image" src="https://github.com/user-attachments/assets/b6eeaac8-caeb-4249-9f81-68c2946e2fb9" />
-### 💻 Код програми:
-<img width="1337" height="670" alt="image" src="https://github.com/user-attachments/assets/ac4d58a0-651b-44a0-a78e-ca754946dcf8" />
-
-```cpp
-#include <iostream>
-#include <stack>
-#include <string>
-
-using namespace std;
-
-int main() {
-    stack<string> S; // Стек для зберігання рядків
-    int count = 0; // Змінна для підрахунку символів
-
-    // Додаємо рядки до стека
-    S.push("BMW");
-    S.push("Audi");
-    S.push("Tesla");
-
-    // Виведіть усі елементи стека та підрахуйте символи
-    while (!S.empty()) {
-        string str = S.top(); // Отримати верхній елемент
-        count += str.length(); // Додати кількість символів
-        cout << str << endl; // Вивести рядок
-        S.pop(); // Видалити верхній елемент
-    }
-
-    cout << "Загальна кількість символів: " << count << endl;
-    return 0;
-}
-```
-### 💻 Результат програми:
-```cpp
-Tesla
-Audi
-BMW
-Загальна кількість символів: 12
-```
-##  Завдання.
 <img width="535" height="102" alt="Знімок екрана 2026-10-13 121804" src="https://github.com/user-attachments/assets/14f83dd3-498e-4ba9-9b93-4c4f8f05cc53" />
 <img width="777" height="70" alt="Знімок екрана 2026-10-13 121616" src="https://github.com/user-attachments/assets/f15a6eff-24eb-4dbd-a533-a0473ccfe14e" />
 <img width="840" height="217" alt="image" src="https://github.com/user-attachments/assets/40b0508d-2935-4317-9852-a5ca84d09a63" />
