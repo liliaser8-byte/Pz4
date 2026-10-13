@@ -1,6 +1,11 @@
 #Практична робота №4:
+**Тема: Реалізація стеку**
+**Мета:** *ознайомитися з основами роботи зі стеком у C++ за допомогою
+стандартного контейнерного std::stack, вивчити основні операції стека:
+додавання, видалення, перегляд верхнього елемента, перевірка на порожність і
+очищення стека.*
 
-**Виконав:** студент групи 4СОМ Серветнік Лілія (Варіант № 13
+**Виконала:** студентка групи 4СОМ Серветнік Лілія (Варіант № 13)
 
 ##  Завдання.
 <img width="627" height="120" alt="image" src="https://github.com/user-attachments/assets/f0c333bb-e62e-487d-bbdf-6dd2dc7e96de" />
@@ -9,10 +14,83 @@
 
 ### 💻 Код програми:
 ```cpp
-// Вставте код вашого варіанта 
+#include <iostream>
+#include <stack>
+#include <string>
+
+using namespace std;
+
+int main() {
+    stack<string> S; // Стек для зберігання рядків
+    int count = 0; // Змінна для підрахунку символів
+
+    // Додаємо рядки до стека
+    S.push("BMW");
+    S.push("Audi");
+    S.push("Tesla");
+
+    // Виведіть усі елементи стека та підрахуйте символи
+    while (!S.empty()) {
+        string str = S.top(); // Отримати верхній елемент
+        count += str.length(); // Додати кількість символів
+        cout << str << endl; // Вивести рядок
+        S.pop(); // Видалити верхній елемент
+    }
+
+    cout << "Загальна кількість символів: " << count << endl;
+    return 0;
+}
 ```
+### 💻 Результат програми:
+```cpp
+Tesla
+Audi
+BMW
+Загальна кількість символів: 12
+}
+```
+##  Завдання.
+<img width="627" height="120" alt="image" src="https://github.com/user-attachments/assets/f0c333bb-e62e-487d-bbdf-6dd2dc7e96de" />
+<img width="816" height="77" alt="Знімок екрана 2026-10-13 114956" src="https://github.com/user-attachments/assets/0efa4ea2-443d-4118-af17-4afa90217553" />
+<img width="940" height="520" alt="Знімок екрана 2026-10-13 114840" src="https://github.com/user-attachments/assets/37d416c7-3c39-455a-b4e3-328214bc191f" />
 
+### 💻 Код програми:
+```cpp
+#include <iostream>
+#include <stack>
+#include <string>
 
+using namespace std;
+
+int main() {
+    stack<string> S; // Стек для зберігання рядків
+    int count = 0; // Змінна для підрахунку символів
+
+    // Додаємо рядки до стека
+    S.push("BMW");
+    S.push("Audi");
+    S.push("Tesla");
+
+    // Виведіть усі елементи стека та підрахуйте символи
+    while (!S.empty()) {
+        string str = S.top(); // Отримати верхній елемент
+        count += str.length(); // Додати кількість символів
+        cout << str << endl; // Вивести рядок
+        S.pop(); // Видалити верхній елемент
+    }
+
+    cout << "Загальна кількість символів: " << count << endl;
+    return 0;
+}
+```
+### 💻 Результат програми:
+```cpp
+Tesla
+Audi
+BMW
+Загальна кількість символів: 12
+}
+```
 <img width="1916" height="597" alt="image" src="https://github.com/user-attachments/assets/f9085bc1-5cb3-4e8d-8bde-7dd5728bbf4d" />
 <img width="861" height="150" alt="image" src="https://github.com/user-attachments/assets/edad66e4-d611-4e9b-8d1b-b8b3b1c3ad32" />
 <img width="1910" height="671" alt="image" src="https://github.com/user-attachments/assets/8b6a0598-dce9-4ba0-a09e-0f4363b2ea1f" />
