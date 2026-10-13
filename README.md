@@ -106,37 +106,58 @@ int main() {
 ```cpp
 #include <iostream>
 #include <stack>
-#include <string>
-
 using namespace std;
 
 int main() {
-    stack<string> S; // Стек для зберігання рядків
-    int count = 0; // Змінна для підрахунку символів
+    stack<int> S; // Стек для зберігання цілих чисел
+    int count = 0; // Змінна для підрахунку витягнутих елементів
+    int foundCount = 0; // Змінна для підрахунку знайдених елементів
 
-    // Додаємо рядки до стека
-    S.push("BMW");
-    S.push("Audi");
-    S.push("Tesla");
+    // Додаємо елементи до стека (6 чисел для варіанту B-13)
+    S.push(20);
+    S.push(40);
+    S.push(60);
+    S.push(80);
+    S.push(100);
+    S.push(120);
 
-    // Виведіть усі елементи стека та підрахуйте символи
-    while (!S.empty()) {
-        string str = S.top(); // Отримати верхній елемент
-        count += str.length(); // Додати кількість символів
-        cout << str << endl; // Вивести рядок
+    int findNum;
+    cout << "Введіть число для пошуку: ";
+    cin >> findNum;
+    // Витягніть елементи зі стека
+    cout << "Витягнуті елементи з стека: ";
+    while (!S.empty())
+    {
+        int num = S.top(); // Отримати верхній елемент
         S.pop(); // Видалити верхній елемент
+        cout << num << " "; // Вивести число
+        count++; // Збільшити лічильник
+
+        if (num == findNum)
+        {
+            foundCount++; // Збільшити лічильник знайдених елементів
+        }
+    }
+    cout << endl;
+
+    // Виведення результатів
+    if (foundCount > 0) {
+        cout << "Число " << findNum << " знайдено " << foundCount << " раз(и)!" << endl;
+    } else {
+        cout << "Число " << findNum << " не знайдено." << endl;
     }
 
-    cout << "Загальна кількість символів: " << count << endl;
+    cout << "Кількість витягнутих елементів: " << count << endl;
+
     return 0;
 }
 ```
 ### 💻 Результат програми:
 ```cpp
-Tesla
-Audi
-BMW
-Загальна кількість символів: 12
+Введіть число для пошуку: 60
+Витягнуті елементи з стека: 120 100 80 60 40 20 
+Число 60 знайдено 1 раз(и)!
+Кількість витягнутих елементів: 6
 ```
 ##  Завдання.
 <img width="1096" height="285" alt="image" src="https://github.com/user-attachments/assets/b6eeaac8-caeb-4249-9f81-68c2946e2fb9" />
@@ -177,7 +198,8 @@ Tesla
 Audi
 BMW
 Загальна кількість символів: 12
-```##  Завдання.
+```
+##  Завдання.
 <img width="535" height="102" alt="Знімок екрана 2026-10-13 121804" src="https://github.com/user-attachments/assets/14f83dd3-498e-4ba9-9b93-4c4f8f05cc53" />
 <img width="777" height="70" alt="Знімок екрана 2026-10-13 121616" src="https://github.com/user-attachments/assets/f15a6eff-24eb-4dbd-a533-a0473ccfe14e" />
 <img width="840" height="217" alt="image" src="https://github.com/user-attachments/assets/40b0508d-2935-4317-9852-a5ca84d09a63" />
@@ -219,7 +241,8 @@ Audi
 BMW
 Загальна кількість символів: 12
 ```
-```##  Завдання.
+```
+##  Завдання.
 <img width="776" height="97" alt="Знімок екрана 2026-10-13 122423" src="https://github.com/user-attachments/assets/1074b007-4bd6-4eee-bb8e-90eeb6b10a50" />
 ### 💻 Код програми:
 <img width="1585" height="637" alt="image" src="https://github.com/user-attachments/assets/c2a5aa15-d0bd-4e15-a197-cb4908cdabcd" />
