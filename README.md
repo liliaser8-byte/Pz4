@@ -228,8 +228,8 @@ int main() {
 Середнє значення парних чисел: 18.3333
 
 ```
-```
 ##  Завдання.
+
 <img width="776" height="97" alt="Знімок екрана 2026-10-13 122423" src="https://github.com/user-attachments/assets/1074b007-4bd6-4eee-bb8e-90eeb6b10a50" />
 
 ### 💻 Код програми:
