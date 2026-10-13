@@ -235,29 +235,32 @@ int main() {
 
 ```cpp
 #include <iostream>
-#include <stack>
 #include <string>
-
+#include <stack>
 using namespace std;
-
 int main() {
-    stack<string> S; // Стек для зберігання рядків
-    int count = 0; // Змінна для підрахунку символів
-
-    // Додаємо рядки до стека
-    S.push("BMW");
-    S.push("Audi");
-    S.push("Tesla");
-
-    // Виведіть усі елементи стека та підрахуйте символи
-    while (!S.empty()) {
-        string str = S.top(); // Отримати верхній елемент
-        count += str.length(); // Додати кількість символів
-        cout << str << endl; // Вивести рядок
-        S.pop(); // Видалити верхній елемент
+    string word = "deified";
+    stack<char> s;
+    // Додавання кожної літери слова у стек
+    for (char c : word) {
+        s.push(c);
     }
-
-    cout << "Загальна кількість символів: " << count << endl;
+    string reversedWord = "";
+    
+    // Витягнути літери у зворотному порядку
+    while (!s.empty()) {
+        reversedWord += s.top();
+        s.pop();
+    }
+    cout << "Оригінал: " << word << endl;
+    cout << "Навпаки:  " << reversedWord << endl;
+    
+    if (word == reversedWord) {
+        cout << "Результат: Рядок є паліндромом!" << endl;
+    } else {
+        cout << "Результат: Рядок НЕ є паліндромом." << endl;
+    }
+    
     return 0;
 }
 ```
