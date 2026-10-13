@@ -98,8 +98,8 @@ int main() {
 Елементи стека: 70 60 50 40 30 
 Сума чисел: 250
 ```
+```
 ##  Завдання.
-
 <img width="1096" height="285" alt="image" src="https://github.com/user-attachments/assets/b6eeaac8-caeb-4249-9f81-68c2946e2fb9" />
 ### 💻 Код програми:
 <img width="1337" height="670" alt="image" src="https://github.com/user-attachments/assets/ac4d58a0-651b-44a0-a78e-ca754946dcf8" />
