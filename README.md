@@ -1,3 +1,14 @@
+#Практична робота №4: Вка
+**Виконав:** студент групи 4СОМ Серветнік Лілія (Варіант № 13
+
+##  Завдання.
+<img width="627" height="120" alt="image" src="https://github.com/user-attachments/assets/f0c333bb-e62e-487d-bbdf-6dd2dc7e96de" />
+<img width="816" height="77" alt="Знімок екрана 2026-10-13 114956" src="https://github.com/user-attachments/assets/0efa4ea2-443d-4118-af17-4afa90217553" />
+
+### 💻 Код програми:
+```cpp
+// Вставте код вашого варіанта 
+```
 <img width="627" height="120" alt="image" src="https://github.com/user-attachments/assets/f0c333bb-e62e-487d-bbdf-6dd2dc7e96de" />
 <img width="816" height="77" alt="Знімок екрана 2026-10-13 114956" src="https://github.com/user-attachments/assets/0efa4ea2-443d-4118-af17-4afa90217553" />
 <img width="940" height="520" alt="Знімок екрана 2026-10-13 114840" src="https://github.com/user-attachments/assets/37d416c7-3c39-455a-b4e3-328214bc191f" />
